@@ -1,1 +1,1 @@
-# CSE143
+This is the repository for CSE143 at University of Wahington
