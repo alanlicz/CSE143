@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="536c84e9-7212-43a5-86f2-ddbc1a0065ca" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1abvivxFKrggmEB2Oticn3mbujA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Application.PlayThatTune">
+    <configuration name="GuitarHero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GuitarHero" />
+      <module name="GuitarHero" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayThatTune" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PlayThatTune" />
+      <module name="GuitarHero" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test37" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test37" />
+      <module name="GuitarHero" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestString" />
+      <module name="GuitarHero" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PlayThatTune" />
+        <item itemvalue="Application.Test37" />
+        <item itemvalue="Application.GuitarHero" />
+        <item itemvalue="Application.TestString" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="536c84e9-7212-43a5-86f2-ddbc1a0065ca" name="Default Changelist" comment="" />
+      <created>1587017238888</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587017238888</updated>
+      <workItem from="1587017239956" duration="5884000" />
+      <workItem from="1587024854548" duration="3844000" />
+      <workItem from="1587060303527" duration="5504000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="880" y="385" key="#Project_Structure" timestamp="1587017454267">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="880" y="385" key="#Project_Structure/-1080.0.1080.1920/0.0.2560.1440@0.0.2560.1440" timestamp="1587017454267" />
+    <state x="1093" y="436" key="#com.intellij.ide.util.MemberChooser" timestamp="1587017996305">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1093" y="436" key="#com.intellij.ide.util.MemberChooser/-1080.0.1080.1920/0.0.2560.1440@0.0.2560.1440" timestamp="1587017996305" />
+    <state width="2518" height="408" key="GridCell.Tab.0.bottom" timestamp="1587071217483">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="408" key="GridCell.Tab.0.bottom/-1080.0.1080.1920/0.0.2560.1440@0.0.2560.1440" timestamp="1587071217483" />
+    <state width="2518" height="423" key="GridCell.Tab.0.bottom/-1080.23.1080.1853/0.0.2560.1440@0.0.2560.1440" timestamp="1587025022790" />
+    <state width="2518" height="408" key="GridCell.Tab.0.bottom/-1080.23.1080.1853/0.23.2560.1417@0.23.2560.1417" timestamp="1587030839808" />
+    <state width="1545" height="343" key="GridCell.Tab.0.bottom/-1080.23.1080.1897/0.23.2560.1337@0.23.2560.1337" timestamp="1587025274373" />
+    <state width="2518" height="408" key="GridCell.Tab.0.center" timestamp="1587071217482">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="408" key="GridCell.Tab.0.center/-1080.0.1080.1920/0.0.2560.1440@0.0.2560.1440" timestamp="1587071217482" />
+    <state width="2518" height="423" key="GridCell.Tab.0.center/-1080.23.1080.1853/0.0.2560.1440@0.0.2560.1440" timestamp="1587025022789" />
+    <state width="2518" height="408" key="GridCell.Tab.0.center/-1080.23.1080.1853/0.23.2560.1417@0.23.2560.1417" timestamp="1587030839807" />
+    <state width="1545" height="343" key="GridCell.Tab.0.center/-1080.23.1080.1897/0.23.2560.1337@0.23.2560.1337" timestamp="1587025274372" />
+    <state width="2518" height="408" key="GridCell.Tab.0.left" timestamp="1587071217481">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="408" key="GridCell.Tab.0.left/-1080.0.1080.1920/0.0.2560.1440@0.0.2560.1440" timestamp="1587071217481" />
+    <state width="2518" height="423" key="GridCell.Tab.0.left/-1080.23.1080.1853/0.0.2560.1440@0.0.2560.1440" timestamp="1587025022788" />
+    <state width="2518" height="408" key="GridCell.Tab.0.left/-1080.23.1080.1853/0.23.2560.1417@0.23.2560.1417" timestamp="1587030839806" />
+    <state width="1545" height="343" key="GridCell.Tab.0.left/-1080.23.1080.1897/0.23.2560.1337@0.23.2560.1337" timestamp="1587025274372" />
+    <state width="2518" height="408" key="GridCell.Tab.0.right" timestamp="1587071217482">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="408" key="GridCell.Tab.0.right/-1080.0.1080.1920/0.0.2560.1440@0.0.2560.1440" timestamp="1587071217482" />
+    <state width="2518" height="423" key="GridCell.Tab.0.right/-1080.23.1080.1853/0.0.2560.1440@0.0.2560.1440" timestamp="1587025022789" />
+    <state width="2518" height="408" key="GridCell.Tab.0.right/-1080.23.1080.1853/0.23.2560.1417@0.23.2560.1417" timestamp="1587030839807" />
+    <state width="1545" height="343" key="GridCell.Tab.0.right/-1080.23.1080.1897/0.23.2560.1337@0.23.2560.1337" timestamp="1587025274372" />
+    <state x="789" y="359" key="SettingsEditor" timestamp="1587071042230">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="789" y="359" key="SettingsEditor/-1080.0.1080.1920/0.0.2560.1440@0.0.2560.1440" timestamp="1587071042230" />
+  </component>
+</project>
