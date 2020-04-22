@@ -18,7 +18,7 @@ public class LetterInventory{
     private int size;
 
     /**
-     * store the number of alphabetic letters in corresponding counter
+     * store the number of alphabetic letters in corresponding counter (case insensitive)
      * @param info the given string
      */
     public LetterInventory(String info){
@@ -52,6 +52,7 @@ public class LetterInventory{
 
     /**
      * takes an character and return how many times character appear in the string
+     * (case insensitive)
      * @param letter the character that needs to be checked the times that appear in the string
      * @exception IllegalArgumentException if passed a non-alphabetic letter
      * @return return the number of times that letter appears in the string
@@ -65,7 +66,7 @@ public class LetterInventory{
     }
 
     /**
-     * set the given letter counter to the given number
+     * set the given letter counter to the given number (case insensitive)
      * @param letter the letter whose counter needs to be modified
      * @param value modify the counter to the given value
      * @exception IllegalArgumentException if the character is non-alphabetic
