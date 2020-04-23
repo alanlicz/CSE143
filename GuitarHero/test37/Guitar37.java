@@ -5,7 +5,6 @@
 // Assignment Guitar Hero
 //
 // Guitar37 class will implement 37 strings of the Guitar interface
-import java.util.*;
 
 public class Guitar37 implements Guitar {
     // keyboard layout
