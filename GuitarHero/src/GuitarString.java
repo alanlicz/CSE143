@@ -47,7 +47,7 @@ public class GuitarString {
             throw new IllegalArgumentException();
         }
 
-        for (int i = 0; i <= init.length; i++){
+        for (int i = 0; i < init.length; i++){
             ringBuffer.add(init[i]);
         }
     }

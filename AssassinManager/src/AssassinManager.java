@@ -9,22 +9,23 @@ import java.util.*;
 
 public class AssassinManager {
 
-    // Linked list that contains the people in the kill ring
+    // front node of kill ring
     private AssassinNode killRing;
 
-    // Linked list that contains the people in the graveyard
+    // front node of the graveyard
     private AssassinNode graveyard;
 
     /**
-     * Initialize a new assassin manager and construct a kill ring that contains every person
-     * @exception NullPointerException if no one is in the list names
-     * @param names use names to construct the list kill ring
+     * Initialize a new assassin manager and construct a kill ring
+     * @exception IllegalArgumentException if names is empty
+     * @param names use names to construct the kill ring, names are non-empty, non-null
+     *              and no repeated names
      */
     public AssassinManager(List<String> names){
         if (names.isEmpty()){
-            throw new NullPointerException();
+            throw new IllegalArgumentException();
         }
-        // Create the first node in the kill list
+        // Create the first node in the kill ring
         killRing = new AssassinNode(names.get(0));
         AssassinNode current = killRing;
         for (int i = 1; i < names.size(); i++){
@@ -34,7 +35,7 @@ public class AssassinManager {
     }
 
     /**
-     * print person in the kill ring with format
+     * print people in the kill ring with format
      */
     public void printKillRing(){
         AssassinNode current = killRing;
@@ -46,8 +47,8 @@ public class AssassinManager {
     }
 
     /**
-     * print person in the graveyard with format
-     * The person that is killed first will be the last to print out
+     * print people in the graveyard with format
+     * The person that is killed most recent will be the first to print out
      */
     public void printGraveyard(){
         AssassinNode current = graveyard;
@@ -63,17 +64,13 @@ public class AssassinManager {
 
     /**
      * return if the person is in the kill ring
-     * @param name need to be checked if is in the kill ring
+     * @param name check name if it is in the kill ring, case is insensitive
      * @return true if the name is in the kill ring, false if not
      */
     public boolean killRingContains(String name){
-        name = name.toLowerCase();
-        if (killRing.name.equalsIgnoreCase(name)){
-            return true;
-        }
         AssassinNode current = killRing;
-        while (current.next != null){
-            if (current.next.name.equalsIgnoreCase(name)){
+        while (current != null){
+            if (current.name.equalsIgnoreCase(name)){
                 return true;
             }
             current = current.next;
@@ -83,11 +80,10 @@ public class AssassinManager {
 
     /**
      * return if the person is dead
-     * @param name need to be checked if is in the dead
-     * @return true if the name is in the dead, false if not
+     * @param name check name if is in the graveyard, case is insensitive
+     * @return true if the name is in graveyard, false if not
      */
     public boolean graveyardContains(String name) {
-        name = name.toLowerCase();
         AssassinNode current = graveyard;
         while (current != null) {
             if (graveyard.name.equalsIgnoreCase(name)) {
@@ -99,7 +95,7 @@ public class AssassinManager {
     }
 
     /**
-     * check if the game has ended
+     * return if the game has ended
      * @return true if the game has ended, false if not
      */
     public boolean gameOver(){
@@ -111,31 +107,28 @@ public class AssassinManager {
      * @return the person who wins the game
      */
     public String winner(){
-
-        String winner;
-        if (killRing != null){
-            winner = killRing.name;
-        }else {
+        if (!gameOver()){
             return null;
         }
-        return winner;
+        return killRing.name;
     }
 
     /**
-     * kill one person whose name is passed
+     * kill one person if the game has not ended or the person exist
      * @param name the person that needs to be killed
-     * @exception IllegalStateException if the game has ended
+     * @exception IllegalStateException if the game has ended or game has ended and the person is
+     * already dead
      * @exception IllegalArgumentException if the person is already dead
      */
     public void kill(String name){
-        AssassinNode currentAssassin = killRing;
-        AssassinNode currentGrave = graveyard;
-        if (gameOver()) {
+        if (gameOver()){
             throw new IllegalStateException();
         }
         if (!killRingContains(name)) {
             throw new IllegalArgumentException();
         }
+        AssassinNode currentAssassin = killRing;
+        AssassinNode currentGrave = graveyard;
         // check if the victim is the first person in the kill ring
         if (currentAssassin.name.equalsIgnoreCase(name)) {
             graveyard = currentAssassin;
