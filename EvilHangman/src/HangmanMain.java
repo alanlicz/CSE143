@@ -8,7 +8,8 @@ import java.util.*;
 import java.io.*;
 
 public class HangmanMain  {
-    public static final String DICTIONARY_FILE = "dictionary.txt";
+    public static final String DICTIONARY_FILE = "/Users/alanli/Library/Mobile Documents/" +
+            "com~apple~CloudDocs/IdeaProjects/CSE143/EvilHangman/dictionary2.txt";
     public static final boolean SHOW_COUNT = false;  // show # of choices left
 
     public static void main(String[] args) throws FileNotFoundException {
