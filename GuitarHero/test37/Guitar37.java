@@ -18,8 +18,7 @@ public class Guitar37 implements Guitar {
     private int currentTime;
 
     /**
-     * Construct a Guitar37 class
-     * Initialize an array that store the frequency of corresponding keys
+     * Construct a Guitar37 class that store the frequency of corresponding keys
      */
     public Guitar37(){
         currentTime = 0;
@@ -33,7 +32,7 @@ public class Guitar37 implements Guitar {
     }
 
     /**
-     * pluck the guitar with the given pitch
+     * pluck the guitar with the given pitch, nothing happens if passing illegal notes
      * @param pitch the pitch that guitar wants to play
      */
     @Override
@@ -68,8 +67,8 @@ public class Guitar37 implements Guitar {
     }
 
     /**
-     * return a sample of all the strings in the array
-     * @return a sample of all the strings in the array
+     * return a sample of all the strings
+     * @return a sample of all the strings
      */
     @Override
     public double sample() {
@@ -81,7 +80,7 @@ public class Guitar37 implements Guitar {
     }
 
     /**
-     * call tic on all the strings in the array
+     * call tic on all the strings
      */
     @Override
     public void tic() {

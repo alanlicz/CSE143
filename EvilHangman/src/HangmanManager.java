@@ -90,17 +90,18 @@ public class HangmanManager {
      * return the current pattern with space in between each letter,
      * letters not yet been guessed appear as dash
      * @return the current pattern
-     * @exception IllegalArgumentException if no words has the pattern
+     * @exception IllegalStateException if no words has the pattern
      */
     public String pattern(){
         if (dicFilter.isEmpty()){
-            throw new IllegalArgumentException();
+            throw new IllegalStateException();
         }
         return currentPattern;
     }
 
     /**
-     * perform one guess and return the times the guessed letter appear in the word
+     * perform one guess and return the times the guessed letter appear in the word, the set of the
+     * guessed letters will be update. If guessed wrong the guessed player has will be deduct by one
      * @param guess the letter user guessed
      * @return the occurrence that the letter has appeared in the word
      * @exception IllegalStateException if user ran out of incorrect guesses
@@ -184,7 +185,7 @@ public class HangmanManager {
      * @param guess the letter that user guessed
      * @return the occurrence of the letter in the word
      */
-    public int countOccurrence(String pattern, char guess){
+    private int countOccurrence(String pattern, char guess){
         int count = 0;
         for (int i = 0; i < (pattern.length() + 1) / 2; i++){
             if (pattern.charAt(2* i) == guess){

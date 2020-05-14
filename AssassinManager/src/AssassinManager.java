@@ -68,14 +68,7 @@ public class AssassinManager {
      * @return true if the name is in the kill ring, false if not
      */
     public boolean killRingContains(String name){
-        AssassinNode current = killRing;
-        while (current != null){
-            if (current.name.equalsIgnoreCase(name)){
-                return true;
-            }
-            current = current.next;
-        }
-        return false;
+        return contains(name, killRing);
     }
 
     /**
@@ -84,9 +77,13 @@ public class AssassinManager {
      * @return true if the name is in graveyard, false if not
      */
     public boolean graveyardContains(String name) {
-        AssassinNode current = graveyard;
-        while (current != null) {
-            if (graveyard.name.equalsIgnoreCase(name)) {
+        return contains(name, graveyard);
+    }
+
+    private boolean contains(String name, AssassinNode node){
+        AssassinNode current = node;
+        while(current != null){
+            if (current.name.equalsIgnoreCase(name)){
                 return true;
             }
             current = current.next;
@@ -103,8 +100,8 @@ public class AssassinManager {
     }
 
     /**
-     * return the winner
-     * @return the person who wins the game
+     * return the winner, or return null is the game is not over
+     * @return the person who wins the game or return null if game is not over
      */
     public String winner(){
         if (!gameOver()){
@@ -115,7 +112,7 @@ public class AssassinManager {
 
     /**
      * kill one person if the game has not ended or the person exist
-     * @param name the person that needs to be killed
+     * @param name the person that needs to be killed, case is insensitive
      * @exception IllegalStateException if the game has ended or game has ended and the person is
      * already dead
      * @exception IllegalArgumentException if the person is already dead
