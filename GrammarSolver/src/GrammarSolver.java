@@ -4,7 +4,7 @@
 // TA: Anthony Tran
 // Assignment Grammar Solver
 //
-// GrammarSolver class generate random elements of grammar based on the given grammar rules
+// GrammarSolver class generate random text based on the given grammar rules
 import java.util.*;
 
 public class GrammarSolver {
@@ -17,7 +17,7 @@ public class GrammarSolver {
      * corresponding values and rules
      * @param rules list of string that contains given grammar rules in BNF format
      * @exception IllegalArgumentException if the grammar rules is empty or there are two or more
-     * same non-terminal entries
+     * entries for the same non-terminal
      */
     public GrammarSolver(List<String> rules){
         if (rules.isEmpty()){
@@ -31,7 +31,7 @@ public class GrammarSolver {
             }
             // \\| does not work in Intellij, changed to [|]
             String[] choices = splitBNF[1].split("[|]");
-            ArrayList<String[]> rule = new ArrayList<>();
+            List<String[]> rule = new ArrayList<>();
             for (String choice : choices) {
                 rule.add(choice.trim().split("\\s+"));
             }
@@ -58,8 +58,7 @@ public class GrammarSolver {
     }
 
     /**
-     * return given times of the string from the symbol that are randomly generated and return
-     * the result as an array
+     * return given times of the string from the symbol, strings are randomly generated
      * @param symbol non-terminals that need to generate string from, case is sensitive
      * @param times the times that the string needs to be generated
      * @return the array contains all the strings, each string has one space between each terminal
